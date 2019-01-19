@@ -1,0 +1,441 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第一节 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="class.html">
+            
+                <a href="class.html">
+            
+                    
+                    第一节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第一节</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><img src="img/2011101914103257.jpg" alt="">
+<a href="https://yangjh.oschina.io/gitbook/faq/Contents.html" target="_blank">https://yangjh.oschina.io/gitbook/faq/Contents.html</a>
+<strong>es5&#x5B9E;&#x73B0;&#x7C7B;</strong></p>
+<pre><code>//&#x4F7F;&#x7528;&#x81EA;&#x8C03;&#x7528;&#x51FD;&#x6570; &#x8BA9;&#x53D8;&#x91CF;&#x79C1;&#x6709;&#x5316; &#x4F2A;&#x9020;&#x4E00;&#x4E2A;class(&#x5C01;&#x95ED;&#x7A7A;&#x95F4;)
+var Greeter = /**@class */(function() {
+  //&#x4F7F;&#x7528;&#x7EC4;&#x5408;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6A21;&#x5F0F;&#x548C;&#x539F;&#x578B;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;
+  //&#x6784;&#x9020;&#x51FD;&#x6570;
+  function Greeter(message) {
+    this.greeting = message;
+  }
+  //&#x539F;&#x578B;
+  Greeter.prototype.greet = function () {
+    return &apos;hello&apos; + this.greeting;
+  }
+  return Greeter;
+})();
+var greeter = new Greeter(&apos;world&apos;)
+// var button = document.getElementById(&apos;#button&apos;)
+// button.onclick = function () {
+//   alert(greeter.greet())
+// }
+// &#x7C7B;
+//1.&#x533F;&#x540D;&#x51FD;&#x6570;
+//2.&#x6784;&#x9020;&#x51FD;&#x6570;
+//3.&#x6784;&#x9020;&#x51FD;&#x6570;&#x539F;&#x578B;&#x94FE;&#x6302;&#x65B9;&#x6CD5;
+//3.return &#x6784;&#x9020;&#x51FD;&#x6570;
+//4.&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+</code></pre><pre><code>class Greeter1 {
+  greeting: string;
+  //constructor &#x4E3A;&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5; &#x901A;&#x8FC7;new&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B; &#x81EA;&#x52A8;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5; 
+  // &#x4E00;&#x4E2A;&#x7C7B;&#x5FC5;&#x987B;&#x6709;constuctor &#x5982;&#x679C;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x5B9A;&#x65F6; &#x90A3;&#x4E2A;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;construct&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;
+  constructor (message:string) {
+    this.greeting = message;
+  }
+  greeter () {
+    return `hello,${this.greeting}`
+  }
+ }
+ let greeter1 = new Greeter(&apos;world&apos;)
+</code></pre><p>//  1.class xxx{}
+//  2.constcutor&#x9ED8;&#x8BA4;&#x65B9;&#x6CD5; &#x5199;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027; 
+//  3.getter&#x4E3A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;
+//  4.new&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+// 1.extend&#x7EE7;&#x627F;</p>
+<pre><code>class Animal {
+  public dogName: string;
+  public constructor (name) {
+    this.dogName = name 
+  }
+  public move (distacneInMeters:number = 50 ) {
+      console.log(`Animal moved ${distacneInMeters}`)
+  }
+}
+
+class Dog extends Animal {
+  color: string
+  constructor (x ,color) {
+    super(x);
+    this.color = color
+  }
+  public bark () {
+    console.log(&apos;bark&apos;)
+  }
+}
+const dog = new Dog(&apos;xxx&apos;,1);
+dog.bark();
+dog.move(10);
+</code></pre><p>// extends &#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x7236;&#x7C7B;
+// &#x516C;&#x5171; public
+// &#x79C1;&#x6709; private 
+// &#x6D3E;&#x751F; protected protected&#x6210;&#x5458;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;
+//  &#x6D3E;&#x751F;&#x7C7B; &#x5229;&#x7528;&#x7EE7;&#x627F;&#x673A;&#x5236;&#xFF0C;&#x65B0;&#x7684;&#x7C7B;&#x53EF;&#x4EE5;&#x4ECE;&#x5DF2;&#x6709;&#x7684;&#x7C7B;&#x4E2D;&#x6D3E;&#x751F;&#x3002;&#x90A3;&#x4E9B;&#x7528;&#x4E8E;&#x6D3E;&#x751F;&#x7684;&#x7C7B;&#x79F0;&#x4E3A;&#x8FD9;&#x4E9B;&#x7279;&#x522B;&#x6D3E;&#x751F;&#x51FA;&#x7684;&#x7C7B;&#x7684;&#x201C;&#x57FA;&#x7C7B;&#x201D;
+// readonly &#x53EA;&#x8BFB;</p>
+<pre><code>class Octopus {
+  readonly numberOfLegs: number = 8;
+  constructor(readonly name: string) {
+  }
+}
+</code></pre><p>// &#x5B58;&#x53D6;&#x5668;
+// TypeScript&#x652F;&#x6301;&#x901A;&#x8FC7;getters/setters&#x6765;&#x622A;&#x53D6;&#x5BF9;&#x5BF9;&#x8C61;&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;&#x3002;</p>
+<pre><code>
+let passcode = &apos;secret&apos;
+class Employee {
+  private _fullName: string;
+  get fullName(): string {
+    //return &#x5B57;&#x7B26;&#x4E32;
+    return this._fullName;
+  }
+  set fullName(newName: string) {
+    if (passcode &amp;&amp; passcode == &apos;secret passcode&apos;) {
+      this._fullName = newName;
+    } else {
+      console.log(&apos;error&apos;)
+    }
+  }
+}
+let employe = new Employee();
+</code></pre><p>//&#x5B9E;&#x4F8B;&#x5C5E;&#x6027;/&#x6210;&#x5458; &#x7528;new&#x6807;&#x5FD7;&#x670D;&#x53BB;&#x5B9E;&#x4F8B;&#x5316;
+//&#x9759;&#x6001;&#x5C5E;&#x6027; &#x7C7B;&#x6210;&#x5458; static&#x4FEE;&#x9970;&#x7684;&#x53D8;&#x91CF;&#x6216;&#x65B9;&#x6CD5;
+&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x5C5E;&#x4E8E;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x5230;&#xFF0C;&#x53EA;&#x6709;(&#x5B9E;&#x4F8B;&#x5316;)&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x624D;&#x80FD;&#x8BBF;&#x95EE;
+&#x7C7B;&#x6210;&#x5458;&#x662F;&#x5C5E;&#x4E8E;&#x7C7B;&#x7684;  &#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; &#x4F46;&#x662F;&#x7C7B;&#x6210;&#x5458;&#x4E5F;&#x80FD;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;&#x5F15;&#x7528;
+// <a href="https://zhidao.baidu.com/question/39372375.html" target="_blank">https://zhidao.baidu.com/question/39372375.html</a>
+// &#x9759;&#x6001;&#x6210;&#x5458;&#x518D;&#x5206;&#x914D;&#x65F6;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#xFF0C;&#x53EA;&#x7528;&#x5206;&#x4E00;&#x6B21;&#x5C31;&#x884C;&#xFF0C;
+// &#x4EE5;&#x540E;&#x90FD;&#x7528;&#x8FD9;&#x4EFD;&#x7A7A;&#x95F4;&#x3002;&#x800C;&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x518D;&#x5206;&#x914D;&#x65F6;&#x662F;&#x6BCF;&#x6B21;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x90FD;&#x8981;&#x5728;&#x518D;&#x914D;&#x4E00;&#x6B21;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre><code>class Grid {
+  static origin  = { x:0, y:0 };
+  //point
+  calculateDistanceFromOrigin (point:{x: number, y: number}) {
+    let xDist = (point.x - Grid.origin.x);
+    let yDist = (point.y - Grid.origin.y);
+    return Math.sqrt(xDist * xDist + yDist * yDist) / this.scale;
+  }
+  constructor (public scale: number) {}
+}
+let grid1 = new Grid(1.0)
+let grid2 = new Grid(5.0)
+console.log(grid1.calculateDistanceFromOrigin({x: 10, y: 10}));
+console.log(grid2.calculateDistanceFromOrigin({x:10,y:20}));
+</code></pre><p>// 6.&#x62BD;&#x8C61;&#x7C7B;
+// &#x62BD;&#x8C61;&#x7C7B;&#x4F5C;&#x4E3A;&#x5176;&#x4ED6;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x57FA;&#x7C7B;&#x4F7F;&#x7528; &#x4ED6;&#x4EEC;&#x4E00;&#x822C;&#x4E0D;&#x5B9E;&#x4F8B;&#x5316; &#x800C;&#x4E14;&#x4E0D;&#x540C;&#x4E8E;&#x63A5;&#x53E3; &#x62BD;&#x8C61;&#x7C7B;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x6210;&#x5458;&#x7684;&#x7EC6;&#x8282;,
+// abstrac&#x5173;&#x952E;&#x4E4B;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x7C7B;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;
+// &#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#x7684;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x4E0D;&#x5305;&#x542B;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x5E76;&#x4E14;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0; &#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x7684;&#x8BED;&#x6CD5;&#x548C;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C; &#x90FD;&#x662F;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x7B7E;&#x540D;&#x4F46;&#x662F;&#x4E0D;&#x542B;&#x5177;&#x4F53;&#x65B9;&#x6CD5;,
+// &#x533A;&#x522B; &#x62BD;&#x8C61;&#x7C7B;&#x7528;anstract&#x4FEE;&#x9970;&#x7B26;
+// &#x65B9;&#x6CD5;&#x7B7E;&#x540D;&#x7531;&#x65B9;&#x6CD5;&#x540D;&#x52A0;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x5217;&#x8868;(&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x548C;&#x987A;&#x5E8F;)
+//&#x7C7B;&#x540D;&#x4E5F;&#x8981;&#x52A0;abstract&#x4FEE;&#x9970;&#x7B26;</p>
+<pre><code>abstract class Department {
+  constructor (public name: string) {
+  }
+  printName():void {
+    console.log(&apos;xxxx&apos; + this.name)
+  }
+abstract printMeeting (): void; //&#x5FC5;&#x987B;&#x5728;&#x6D3E;&#x751F;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;
+}
+ class xxx extends Department {
+  constructor (){
+    super(&apos;xxxx&apos;)
+  }
+  printMeeting():void {
+    console.log(1)
+  }
+  getxxx ():void {
+    console.log(2)
+  }
+ }
+ let department :Department //&#x521B;&#x5EFA;&#x5BF9;&#x62BD;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x5E94;&#x7528;
+ //&#x4E0D;&#x80FD;&#x5BF9;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;,&#x4F46;&#x662F;&#x80FD;&#x5BF9;&#x62BD;&#x8C61;&#x5B50;&#x7C7B;&#x8FDB;&#x884C;&#x5B9E;&#x4F8B;&#x5316;&#x548C;&#x8D4B;&#x503C;
+//  department = new Department() //&#x4E0D;&#x80FD;&#x521B;&#x5EFA;&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;
+department = new xxx()
+department.getxxx() //&#x65B9;&#x6CD5;&#x5728;&#x58F0;&#x660E;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#x4E0D;&#x5B58;&#x5728; &#x62BD;&#x8C61;
+department.printName();
+department.printMeeting();
+</code></pre><p>//7.&#x9AD8;&#x7EA7;&#x6280;&#x5DE7;&#x6784;&#x9020;&#x51FD;&#x6570;
+// &#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x4F1A;&#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x4E1C;&#x897F;,&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x548C;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;
+//this&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;</p>
+<pre><code>class Greeter3 {
+  static standardGreeting = &apos;hello,&apos;
+  greeting: string;
+  greet() {
+    if(this.greeting) {
+      return `xxx${this.greeting}`
+    } else {
+      return Greeter3.standarGreeting
+    }
+  }
+}
+let greeter3: Greeter3; //greeter3&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x662F;Greeter
+greeter3 = new Greeter3()
+
+let greterMarke : typeof Greeter3 = Greeter3;
+greterMarke.standardGreeting = &quot;Hey there!&quot;;
+let greeter4: Greeter3 = new greterMarke();
+console.log(greeter4.greet())
+</code></pre><p>//8.&#x628A;&#x7C7B;&#x5F53;&#x63A5;&#x53E3;&#x7528;
+// &#x56E0;&#x4E3A;&#x7C7B;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x7C7B;&#x578B;,&#x6240;&#x4EE5;&#x4F60;&#x80FD;&#x591F;&#x5141;&#x8BB8;&#x5728;&#x63A5;&#x53E3;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x7C7B;</p>
+<pre><code>class point {
+  x: number;
+  y: number;
+}
+interface point3d extends point {
+  z: number;
+}
+let point3d: point3d = { x: 1, y: 2, z: 3 }
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第一章">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第一节","level":"1.2.1","depth":2,"previous":{"title":"第一章","level":"1.2","depth":1,"path":"content/section1/README.md","ref":"content/section1/README.md","articles":[{"title":"第一节","level":"1.2.1","depth":2,"path":"content/section1/class.md","ref":"content/section1/class.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/section1/class.md","mtime":"2019-01-19T09:05:27.431Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-19T09:06:32.570Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
