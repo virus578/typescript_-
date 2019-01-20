@@ -1,0 +1,40 @@
+{
+"plugins": [
+  "github-buttons",
+  "splitter",
+  "-sharing",
+  "simple-page-toc",
+  "expandable-chapters-small",
+  "anchor-navigation-ex",
+  "-highlight",
+  "prism",
+  "prism-themes"
+],
+"pluginsConfig": {
+  "github-buttons": {
+    "buttons": [
+      {
+        "user": "azu",
+        "repo": "JavaScript-Plugin-Architecture",
+        "type": "star",
+        "size": "large"
+      },
+      {
+        "user": "azu",
+        "type": "follow",
+        "width": "230",
+        "count": false
+      }
+    ]
+  },
+  "simple-page-toc": {
+    "maxDepth": 3,
+    "skipFirstH1": true
+  },
+"prism": {
+  "css": [
+    "prismjs/themes/prism-solarizedlight.css"
+  ]
+}
+}
+}
